@@ -691,12 +691,18 @@ function App() {
       {/* Landing Page */}
       {showLanding && (
         <div className="fixed inset-0 bg-pink-50 flex items-center justify-center p-4 z-50">
-          <button 
-            onClick={() => setShowLanding(false)}
-            className="text-[10rem] transform transition-all duration-500 hover:scale-110 hover:rotate-6"
-          >
-            💌
-          </button>
+          <div className="text-center">
+            <button 
+              onClick={() => setShowLanding(false)}
+              className="text-[10rem] transform transition-all duration-500 hover:scale-110 hover:rotate-6"
+            >
+              💌
+            </button>
+            <p className="mt-2 text-lg text-pink-600 font-semibold animate-bounce">
+              Click to open
+              <span className="ml-1 animate-pulse">❤️</span>
+            </p>
+          </div>
         </div>
       )}
 
